@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    background: azure;
+}
+
+/* div that contains the form */
+.container{
+    width: 700px;
+    height: auto;
+    background-image: linear-gradient(to right, lightblue, ghostwhite);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    display: flex;
+    box-shadow: 10px 5px gray;
+    text-align: center;
+}
+
+label{
+    display: inline-block;
+}
+input{
+    width: 100%;
+    position: relative;
+    margin: 15px;
+}
+
+/* Form heading */
+form h1{
+    color: white;
+    text-shadow: 2px 2px blueviolet;
+    font-family: 'Brush Script MT', cursive;
+    font-size: xx-large;
+}
+
+/* heading for radio buttons */
+form h6{
+    color: blueviolet;
+    text-shadow: 2px 2px ghostwhite;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* div containing radio input and label */
+.box{
+    display:flex; 
+    flex-direction: row; 
+    margin-left: -110px;
+}
+
+.box label{
+    margin-left: -300px;
+    margin-top: 10px;
+}
+
+/* First number input*/
+form #num1{
+    width: 100%;
+    padding: 20px 60px;
+    border: 2px blueviolet solid;
+    outline: none;
+    font-size: 18px;
+    background-color: azure;
+    border-radius: 40px;
+}
+
+/* Second number input */
+form #num2{
+    width: 100%;
+    padding: 20px 60px;
+    border: 2px blueviolet solid;
+    outline: none;
+    font-size: 18px;
+    background-color: azure;
+    border-radius: 40px;
+}
+
+/* First input placeholder */
+form #num1::placeholder{
+    color: lightblue;
+    font-weight: 500;
+}
+
+/* Second input placeholder */
+form #num2::placeholder{
+    color: lightblue;
+    font-weight: 500;
+}
+
+input[type=radio] {
+    accent-color: blueviolet;
+  }
+
+.button{
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Calculate Button */
+#cal-btn{
+    font-family: 'Copperplate Gothic Light';
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color: blueviolet;
+    background-color: transparent;
+    border: 2px solid blueviolet;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+#cal-btn:hover{
+    color: white;
+    background-color: blueviolet;
+    border: 2px solid transparent;
+}
+
+/* RESET Button */
+#res-btn{
+    font-family: 'Copperplate Gothic Light';
+    width: 30%;
+    padding: 5px;
+    font-size: 15px;
+    color: blueviolet;
+    background-color: transparent;
+    border: 2px solid blueviolet;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#res-btn:hover{
+    color: white;
+    background-color: blueviolet;
+    border: 2px solid transparent;
+}
+
+/* Output */
+#result{
+    width: 100%;
+    position: relative;
+    color: grey;
+    text-shadow: 1px 1px 1px 2px green;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}

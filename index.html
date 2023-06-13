@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>TWO6701 -> Calculator App</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+<body>
+    <div class="container">
+        <form name="myform" id="myForm">
+            <h1>Basic Calculator</h1><br>
+            <label for="fnum">1st number</label>
+            <input type="number" id="num1" placeholder="Enter a number"><br>
+            <label for="snum">2nd number</label>
+            <input type="number" id="num2" placeholder="Enter another number"> <br>
+            <h6>Select mathematical operation</h6>
+            <div class="box">
+                <input type="radio" id="plus" name="operation" value="Addition">
+                <label for="plus">Addition</label>
+            </div>
+            <div class="box">
+                <input type="radio" id="minus" name="operation" value="Subtraction">
+                <label for="minus">Subtraction</label>
+            </div>
+            <div class="box">
+                <input type="radio" id="multiply" name="operation" value="Multiplication">
+                <label for="multiply">Multiplication</label>
+            </div>
+            <div class="box">
+                <input type="radio" id="divide" name="operation" value="Division">
+                <label for="divide">Division</label>
+            </div>
+            <input type="button" id="cal-btn" value="Calculate" onclick="validate()">
+            <div id="result"></div>
+            <input type="button" id="res-btn" value="Reset" onclick="formReset()">
+        </form>
+    </div>
+    
+    <!-- JS Link -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
